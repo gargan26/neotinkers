@@ -5,8 +5,8 @@ import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtOps;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
@@ -70,11 +70,13 @@ public class PotionFluidType extends FluidType {
     });
   }
 
-  /** Creates the legacy potion tag, used for datagen serialization of potion fluid outputs */
-  private static CompoundTag potionTag(ResourceLocation location) {
-    CompoundTag tag = new CompoundTag();
-    tag.putString("Potion", location.toString());
-    return tag;
+  /**
+   * Creates the potion tag used for datagen serialization of potion fluid outputs.
+   * Encodes a {@link DataComponentPatch} setting {@link DataComponents#POTION_CONTENTS}, matching what
+   * {@link FluidOutput.Loadable}/{@code OfTagPreference} expect to decode back via {@code DataComponentPatch.CODEC}.
+   */
+  private static CompoundTag potionTag(Holder<Potion> potion) {
+    return (CompoundTag) DataComponentPatch.CODEC.encodeStart(NbtOps.INSTANCE, potionPatch(potion)).result().orElseThrow();
   }
 
   /** Creates a component patch holding the given potion contents */
@@ -94,7 +96,7 @@ public class PotionFluidType extends FluidType {
 
   /** Creates a fluid output for the given potion */
   public static FluidOutput potionResult(Holder<Potion> potion, int size) {
-    CompoundTag tag = potionTag(potion.unwrapKey().map(ResourceKey::location).orElseThrow());
+    CompoundTag tag = potionTag(potion);
     return FluidOutput.fromTag(Objects.requireNonNull(TinkerFluids.potion.getCommonTag()), size, tag);
   }
 
