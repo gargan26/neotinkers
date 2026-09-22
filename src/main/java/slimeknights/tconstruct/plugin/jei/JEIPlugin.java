@@ -398,10 +398,12 @@ public class JEIPlugin implements IModPlugin {
 
   @Override
   public void registerGuiHandlers(IGuiHandlerRegistration registration) {
-    registration.addGenericGuiContainerHandler(MelterScreen.class, new GuiContainerTankHandler<>());
-    registration.addGenericGuiContainerHandler(AlloyerScreen.class, new GuiContainerTankHandler<>());
-    registration.addGenericGuiContainerHandler(HeatingStructureScreen.class, new GuiContainerTankHandler<>());
-    registration.addGenericGuiContainerHandler(ToolContainerScreen.class, new GuiContainerTankHandler<>());
+    IIngredientManager ingredientManager = registration.getJeiHelpers().getIngredientManager();
+
+    registration.addGenericGuiContainerHandler(MelterScreen.class, new GuiContainerTankHandler<>(ingredientManager));
+    registration.addGenericGuiContainerHandler(AlloyerScreen.class, new GuiContainerTankHandler<>(ingredientManager));
+    registration.addGenericGuiContainerHandler(HeatingStructureScreen.class, new GuiContainerTankHandler<>(ingredientManager));
+    registration.addGenericGuiContainerHandler(ToolContainerScreen.class, new GuiContainerTankHandler<>(ingredientManager));
   }
 
   @Override
