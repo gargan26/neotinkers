@@ -33,7 +33,7 @@ plugins {
     eclipse
     `maven-publish`
     id("net.neoforged.moddev") version "2.0.147"
-    id("io.freefair.lombok") version "8.10"
+    id("io.freefair.lombok") version "9.7.0"
 }
 
 group = "slimeknights.tconstruct"
@@ -217,6 +217,12 @@ tasks.named<Jar>("sourcesJar") {
         "pack.mcmeta",
         "META-INF/neoforge.mods.toml"
     )
+}
+
+gradle.startParameter.taskNames.forEach { taskName ->
+    tasks.matching { it.name == taskName }.configureEach {
+        dependsOn(gradle.includedBuild("neomantle").task(":$taskName"))
+    }
 }
 
 publishing {

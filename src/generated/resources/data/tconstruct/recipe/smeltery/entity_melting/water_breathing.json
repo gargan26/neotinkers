@@ -10,7 +10,9 @@
   "result": {
     "amount": 50,
     "nbt": {
-      "Potion": "minecraft:water_breathing"
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water_breathing"
+      }
     },
     "tag": "c:potion"
   }

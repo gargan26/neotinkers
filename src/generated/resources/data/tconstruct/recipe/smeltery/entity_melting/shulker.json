@@ -7,7 +7,9 @@
   "result": {
     "amount": 25,
     "nbt": {
-      "Potion": "minecraft:leaping"
+      "minecraft:potion_contents": {
+        "potion": "minecraft:leaping"
+      }
     },
     "tag": "c:potion"
   }

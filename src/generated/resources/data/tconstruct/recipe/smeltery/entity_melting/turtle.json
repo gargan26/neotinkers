@@ -7,7 +7,9 @@
   "result": {
     "amount": 25,
     "nbt": {
-      "Potion": "minecraft:turtle_master"
+      "minecraft:potion_contents": {
+        "potion": "minecraft:turtle_master"
+      }
     },
     "tag": "c:potion"
   }
