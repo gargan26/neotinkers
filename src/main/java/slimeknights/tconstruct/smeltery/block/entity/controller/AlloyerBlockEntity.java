@@ -29,7 +29,6 @@ import slimeknights.tconstruct.smeltery.block.entity.module.alloying.MixerAlloyT
 import slimeknights.tconstruct.smeltery.block.entity.module.alloying.SingleAlloyingModule;
 import slimeknights.tconstruct.smeltery.menu.AlloyerContainerMenu;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 /**

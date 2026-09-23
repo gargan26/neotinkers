@@ -38,9 +38,6 @@ import slimeknights.tconstruct.smeltery.block.entity.ITankBlockEntity.ITankInven
 import slimeknights.tconstruct.smeltery.block.entity.component.TankBlockEntity;
 import slimeknights.tconstruct.tools.entity.FluidEffectProjectile;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import static net.minecraft.world.level.block.DirectionalBlock.FACING;
 
 /** Tank block entity which also shoots a fluid */

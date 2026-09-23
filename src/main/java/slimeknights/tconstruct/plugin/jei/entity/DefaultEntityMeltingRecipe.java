@@ -1,9 +1,9 @@
 package slimeknights.tconstruct.plugin.jei.entity;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.neoforged.neoforge.common.util.Lazy;
-import net.minecraft.core.registries.BuiltInRegistries;
 import slimeknights.mantle.recipe.helper.FluidOutput;
 import slimeknights.mantle.recipe.ingredient.EntityIngredient;
 import slimeknights.tconstruct.TConstruct;

@@ -20,7 +20,7 @@ import slimeknights.tconstruct.library.tools.SlotType.SlotCount;
 import slimeknights.tconstruct.tools.TinkerModifiers;
 
 import javax.annotation.Nullable;
-import java.awt.Color;
+import java.awt.*;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;

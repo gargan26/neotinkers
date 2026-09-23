@@ -19,7 +19,7 @@ import slimeknights.tconstruct.library.recipe.partbuilder.IDisplayPartBuilderRec
 import slimeknights.tconstruct.library.recipe.partbuilder.Pattern;
 import slimeknights.tconstruct.library.tools.layout.Patterns;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.List;
 
 /**

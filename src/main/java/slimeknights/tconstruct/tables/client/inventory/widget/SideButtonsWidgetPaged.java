@@ -1,12 +1,11 @@
 package slimeknights.tconstruct.tables.client.inventory.widget;
 
 
-import net.minecraft.network.chat.Component;
-
-import net.minecraft.client.gui.components.Button;
-import slimeknights.mantle.client.screen.MultiModuleScreen;
 import lombok.Getter;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.network.chat.Component;
+import slimeknights.mantle.client.screen.MultiModuleScreen;
 
 /**
  * A side buttons widget with pagination

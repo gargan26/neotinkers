@@ -1,7 +1,7 @@
 package slimeknights.tconstruct.plugin.jei.util;
 
-import mezz.jei.api.neoforge.NeoForgeTypes;
 import mezz.jei.api.gui.handlers.IGuiContainerHandler;
+import mezz.jei.api.neoforge.NeoForgeTypes;
 import mezz.jei.api.runtime.IClickableIngredient;
 import mezz.jei.api.runtime.IIngredientManager;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;

@@ -20,7 +20,7 @@ import slimeknights.tconstruct.library.recipe.modifiers.adding.IDisplayModifierR
 import slimeknights.tconstruct.library.tools.SlotType.SlotCount;
 import slimeknights.tconstruct.plugin.jei.modifiers.SlotIngredientRenderer;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.List;
 
 /**

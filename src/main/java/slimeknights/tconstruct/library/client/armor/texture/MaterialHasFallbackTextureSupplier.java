@@ -3,8 +3,6 @@ package slimeknights.tconstruct.library.client.armor.texture;
 import com.google.common.collect.ImmutableSet;
 import lombok.RequiredArgsConstructor;
 import net.minecraft.core.RegistryAccess;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.Tag;
 import net.minecraft.world.item.ItemStack;
 import slimeknights.mantle.data.loadable.array.ArrayLoadable;
 import slimeknights.mantle.data.loadable.primitive.IntLoadable;

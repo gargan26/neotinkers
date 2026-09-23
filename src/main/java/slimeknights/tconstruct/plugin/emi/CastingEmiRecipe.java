@@ -16,7 +16,7 @@ import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.recipe.FluidValues;
 import slimeknights.tconstruct.library.recipe.casting.IDisplayableCastingRecipe;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.List;
 
 /**

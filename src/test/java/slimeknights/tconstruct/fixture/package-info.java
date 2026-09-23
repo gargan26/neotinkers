@@ -2,6 +2,3 @@
 @MethodsReturnNonnullByDefault
 package slimeknights.tconstruct.fixture;
 
-import net.minecraft.MethodsReturnNonnullByDefault;
-
-import javax.annotation.ParametersAreNonnullByDefault;

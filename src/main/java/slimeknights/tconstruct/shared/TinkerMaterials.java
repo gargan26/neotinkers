@@ -21,8 +21,6 @@ import slimeknights.tconstruct.library.json.predicate.material.MaterialPredicate
 import slimeknights.tconstruct.library.json.predicate.material.MaterialStatTypePredicate;
 import slimeknights.tconstruct.library.json.predicate.material.MaterialTierPredicate;
 import slimeknights.tconstruct.library.json.predicate.material.MaterialVariantPredicate;
-import slimeknights.tconstruct.library.recipe.ingredient.MaterialIngredient;
-import slimeknights.tconstruct.library.recipe.ingredient.MaterialValueIngredient;
 import slimeknights.tconstruct.shared.block.KnightMetalBlock;
 import slimeknights.tconstruct.shared.block.OrientableBlock;
 import slimeknights.tconstruct.shared.block.SlimesteelBlock;

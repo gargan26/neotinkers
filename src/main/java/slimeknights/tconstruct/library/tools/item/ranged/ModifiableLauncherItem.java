@@ -1,6 +1,5 @@
 package slimeknights.tconstruct.library.tools.item.ranged;
 
-import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import lombok.Getter;
 import net.minecraft.core.BlockPos;

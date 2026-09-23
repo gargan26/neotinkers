@@ -1,14 +1,12 @@
 package slimeknights.tconstruct.world.block;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.BlockGetter;
 import net.neoforged.neoforge.common.util.TriState;
-
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class SlimeDirtBlock extends Block {
 

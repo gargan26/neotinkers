@@ -1,8 +1,8 @@
 package slimeknights.tconstruct.library.utils;
 
 import net.minecraft.locale.Language;
-import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import org.apache.commons.lang3.text.WordUtils;
 import slimeknights.mantle.data.listener.ISafeManagerReloadListener;
 
